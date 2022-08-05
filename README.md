@@ -1,4 +1,7 @@
-# GameMania
+# Game Mania  
+
+## Link do site: [Game Mania]( https://game-mania-br.netlify.app)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
