@@ -1,0 +1,92 @@
+<main>
+  <div id="login">
+    <form class="card" (ngSubmit)="capturarDados()">
+      <div class="card-header">
+        <h2>Login</h2>
+        <img
+          src="../../../assets/images/logo.png"
+          alt="Logo Game Mania"
+          class="logotype"
+        />
+      </div>
+
+      <div class="card-content">
+        <div class="card-content-area">
+          <i class="fa-solid fa-user icon"></i>
+          <label for="usuario">Usuário</label>
+
+          <input
+            type="text"
+            id="usuario"
+            autocomplete="off"
+            name="usuario"
+            [(ngModel)]="userModel.usuario"
+          />
+        </div>
+
+        <div class="card-content-area">
+          <i class="fa-solid fa-phone icon"></i>
+          <label for="phone">Telefone</label>
+
+          <input
+            type="phone"
+            id="phone"
+            autocomplete="off"
+            name="phone"
+            [(ngModel)]="userModel.phone"
+          />
+        </div>
+
+        <div class="card-content-area">
+          <i class="fa-solid fa-envelope icon"></i>
+          <label for="email">e-mail</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="userModel.email"
+          />
+        </div>
+
+        <div class="card-content-area">
+          <i class="fa-solid fa-key icon"></i>
+          <label for="password">Senha</label>
+
+          <input
+            type="password"
+            id="password"
+            autocomplete="off"
+            name="password"
+            [(ngModel)]="userModel.password"
+          />
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <button
+          type="submit"
+          value="Cadastre-se"
+          class="submit signin"
+          id="signin"
+        >
+          Sign in
+        </button>
+      </div>
+
+      <div class="card-footer">
+        <br />
+        <a href="">Já tem cadastro?</a>
+
+        <button
+          type="button"
+          value="Login"
+          class="submit loginButton"
+          id="login-submit"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</main>
