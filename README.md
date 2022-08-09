@@ -6,6 +6,13 @@
 
 <img src="./src/assets/images/UMLUSecase.PNG" alt="Use case" width="300"/>
 
+> Este documento de visão de negócio tem como finalidade apresentar uma visão de arquitetura do projeto Game Mania, contendo especificações e restrições de design, a fim de manter o leitor informado sobre o sistema desenvolvido.
+
+ > `Nome`	- Game Mania
+>`Público-alvo` -	Jovens das classes A, B e C que se interessam pelo mundo gamer.
+> `Objetivo` -	Proporcionar conhecimento e oferecer produtos de qualidade voltados ao mundo gamer.
+
+>Este projeto visa proporcionar oportunidade de negócio no setor tecnológico, trazendo como vantagens aos consumidores das classes A, B e C, que se interessam pelo mundo gamer, alguns benefícios, como a facilidade de acesso a games, consoles e acessórios.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
