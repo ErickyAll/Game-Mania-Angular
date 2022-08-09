@@ -4,7 +4,7 @@
 
 ## Modelagem caso de uso 
 
-![Modelagem caso de uso](./src/assets/images/UMLUSecase.PNG)
+<img src="./src/assets/images/UMLUSecase.PNG" alt="Use case" width="300"/>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
