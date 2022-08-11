@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "usuario": "Erickinho",
+      "phone": "(66) 6 66666666",
+      "email": "lula@livre.com",
+      "password": "$2a$10$jwl/TnluFq4EeGAbeE3td.oWcCZ7DY/9AMWwm9th6wXBgLuD9kT76",
+      "id": 1
+    },
+    {
+      "email": "lulinha@livre.com",
+      "password": "$2a$10$1qWywtqOjd1CgtnDiwNY.eNtjtuwQRAlslTcewUv3RAGNtu/hSqPm",
+      "id": 2
+    }
+  ]
+}
