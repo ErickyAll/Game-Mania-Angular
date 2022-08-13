@@ -2,7 +2,6 @@
   "users": [
     {
       "usuario": "Erickinho",
-      "phone": "(66) 6 66666666",
       "email": "lula@livre.com",
       "password": "$2a$10$jwl/TnluFq4EeGAbeE3td.oWcCZ7DY/9AMWwm9th6wXBgLuD9kT76",
       "id": 1
@@ -11,15 +10,19 @@
       "email": "rick@almeida.com",
       "password": "$2a$10$9KodLXNJTsElp/rGUfQpPeqGV2AEJbej5QVW2rIzyNWrAm0NAUhf6",
       "usuario": "Rick",
-      "Phone": "(77)7 7777-7777",
       "id": 2
     },
     {
       "email": "erick@almeida.com",
       "password": "$2a$10$Kge44TByBe8tEdwFj7ldeuUz9N0mhUjg31ulPoAK.JXtHDxF1pWZ.",
       "id": 3,
-      "usario": "Erick",
-      "Phone": "(77)7 7777-7777"
+      "usario": "Erick"
+    },
+    {
+      "email": "erick@lala.com",
+      "password": "$2a$10$k/1kVMC0sHC/osf/H9vxdeBS9NcYFCMlsL5/.Lgu96VJDVwXc5vnG",
+      "usuario": "Erickinho",
+      "id": 4
     }
   ]
 }
