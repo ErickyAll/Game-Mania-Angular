@@ -15,7 +15,7 @@ $(document).ready(function () {
       email.trim() == "" ||
       key.trim() == ""
     ) {
-      alert("Favor, preencher todos os campos");
+      // console.log("Favor, preencher todos os campos");
     } else {
       $("#signin").css("background-color", "green");
     }

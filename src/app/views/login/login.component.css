@@ -126,6 +126,15 @@ main {
 
 }
 
+.message {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: goldenrod;
+
+}
+
 .card-footer {
 
   display: flex;

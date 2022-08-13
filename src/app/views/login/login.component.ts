@@ -5,27 +5,30 @@ import { UserService } from 'src/app/services/user.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  constructor(private userService: UserService) {}
 
-  userModel = new User()
+  ngOnInit(): void {}
 
-  constructor(private userService: UserService) { }
-
-  ngOnInit(): void {
-  }
-
+  userModel = new User();
+  message: string = '';
 
   //Função de Login
-  signin(){
-    console.log(this.userModel);
+  signin() {
+    // console.log(this.userModel);
 
-    this.userService.signin(this.userModel).subscribe(function(response){
-      console.log(response);
-      
-    })
-
+    this.userService.signin(this.userModel).subscribe(
+      //utilizando subscribe seguindo a biblioteca rxJS
+      {
+        next: (response) => {
+          this.message = 'Logado com Sucesso!';
+        },
+        error: (erro) => {
+          this.message = ` ${erro.error} ${erro.status} ${erro.statusText}`;
+        },
+      }
+    );
   }
-
 }
