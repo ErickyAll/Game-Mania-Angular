@@ -21,6 +21,9 @@
             autocomplete="off"
             name="usuario"
             [(ngModel)]="userModel.usuario"
+            required
+            autofocus
+            autocomplete
           />
         </div>
 
@@ -33,6 +36,8 @@
             id="email"
             name="email"
             [(ngModel)]="userModel.email"
+            required
+            autocomplete
           />
         </div>
 
@@ -46,6 +51,12 @@
             autocomplete="off"
             name="password"
             [(ngModel)]="userModel.password"
+            required
+            minlength="4"
+            maxlength="8"
+            pattern="[0-9a-fA-F]{4,8}"
+            title="Coloque HEX no mínimo 4 e no máximo 8 caracteres"
+            placeholder="mín de 4 máx de 8"
           />
         </div>
       </div>

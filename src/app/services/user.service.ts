@@ -9,7 +9,7 @@ import { User } from '../models/user';
 export class UserService {
   constructor(private httpClient: HttpClient) {}
 
-  url = ' http://localhost:3000/signin';
+  url = ' http://localhost:3000/users';
 
   //post
   signin(user: User): Observable<any> {

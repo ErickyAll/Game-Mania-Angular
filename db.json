@@ -23,6 +23,12 @@
       "password": "$2a$10$k/1kVMC0sHC/osf/H9vxdeBS9NcYFCMlsL5/.Lgu96VJDVwXc5vnG",
       "usuario": "Erickinho",
       "id": 4
+    },
+    {
+      "usuario": "Erick",
+      "email": "erickalmeida2207@gmail.com",
+      "password": "1234",
+      "id": 5
     }
   ]
 }
