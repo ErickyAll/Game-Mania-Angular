@@ -4,11 +4,11 @@ import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'],
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css'],
 })
-export class LoginComponent implements OnInit {
+export class SignupComponent implements OnInit {
   constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void {}
@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit {
 
   validateLogin(): boolean {
     if (
+      this.userModel.usuario === undefined ||
+      this.userModel.usuario === '' ||
       this.userModel.email === undefined ||
       this.userModel.email === '' ||
       this.userModel.password === undefined ||
@@ -32,14 +34,13 @@ export class LoginComponent implements OnInit {
   // Comando para rodar json server
   // json-server db.json -m ./node_modules/json-server-auth
 
-  //Função de Login
-  signin() {
+  signup() {
     if (this.validateLogin()) {
-      this.userService.signin(this.userModel).subscribe(
+      this.userService.signUp(this.userModel).subscribe(
         //utilizando subscribe seguindo a biblioteca rxJS
         {
           next: (response) => {
-            this.message = 'Logado com Sucesso!';
+            this.message = 'Cadastrado com Sucesso!';
             this.router.navigate(['']);
           },
           error: (erro) => {

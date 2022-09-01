@@ -1,8 +1,8 @@
 <main>
   <div id="login">
-    <form class="card" (ngSubmit)="signin()">
+    <form class="card" (ngSubmit)="signup()">
       <div class="card-header">
-        <h2>Login</h2>
+        <h2>Cadastro</h2>
         <img
           src="../../../assets/images/logo.png"
           alt="Logo Game Mania"
@@ -12,8 +12,24 @@
 
       <div class="card-content">
         <div class="card-content-area">
+          <i class="fa-solid fa-user icon"></i>
+          <label for="usuario">Usuário</label>
+
+          <input
+            type="text"
+            id="usuario"
+            autocomplete="off"
+            name="usuario"
+            [(ngModel)]="userModel.usuario"
+            required
+            autofocus
+            autocomplete
+          />
+        </div>
+
+        <div class="card-content-area">
           <i class="fa-solid fa-envelope icon"></i>
-          <label for="email">E-mail</label>
+          <label for="email">e-mail</label>
 
           <input
             type="email"
@@ -40,6 +56,7 @@
             maxlength="8"
             pattern="[0-9a-fA-F]{4,8}"
             title="Coloque HEX no mínimo 4 e no máximo 8 caracteres"
+            placeholder="mín de 4 máx de 8"
           />
         </div>
       </div>
@@ -51,7 +68,7 @@
           class="submit signin"
           id="signin"
         >
-          Sign in
+          Sign up
         </button>
       </div>
 
@@ -59,16 +76,16 @@
 
       <div class="card-footer">
         <br />
-        <a href="">Não tem cadastro?</a>
+        <a href="">Já tem cadastro?</a>
 
         <button
           type="button"
           value="Login"
           class="submit loginButton"
           id="login-submit"
-          routerLink="/signup"
+          routerLink="/login"
         >
-          Sign up
+          Login
         </button>
       </div>
     </form>

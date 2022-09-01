@@ -9,11 +9,21 @@ import { User } from '../models/user';
 export class UserService {
   constructor(private httpClient: HttpClient) {}
 
-  url = ' http://localhost:3000/users';
+  urlSigin = ' http://localhost:3000/signin';
+
+  urlSiginUp = ' http://localhost:3000/signup';
 
   //post
   signin(user: User): Observable<any> {
-    return this.httpClient.post(this.url, JSON.stringify(user), {
+    return this.httpClient.post(this.urlSigin, JSON.stringify(user), {
+      headers: new HttpHeaders({ 'COntent-type': 'application/json' }),
+      observe: 'response',
+    });
+  }
+
+  //post
+  signUp(user: User): Observable<any> {
+    return this.httpClient.post(this.urlSiginUp, JSON.stringify(user), {
       headers: new HttpHeaders({ 'COntent-type': 'application/json' }),
       observe: 'response',
     });

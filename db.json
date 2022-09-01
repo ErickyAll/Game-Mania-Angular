@@ -29,6 +29,18 @@
       "email": "erickalmeida2207@gmail.com",
       "password": "1234",
       "id": 5
+    },
+    {
+      "email": "erick@almeida.com.br",
+      "password": "$2a$10$OpWtWHEwI5Z3y4ZS6.l28.B/AsYr9ylRPT.UqIbNeuYzTtVyd865.",
+      "usuario": "Erick",
+      "id": 6
+    },
+    {
+      "email": "erickinho.ea@gmail.com",
+      "password": "$2a$10$SYLlPr1rc6GP.YRP4sSVYu1rgdn9ypz6owRMj947W/Pti0cQodvDi",
+      "usuario": "Erickyy",
+      "id": 7
     }
   ]
 }

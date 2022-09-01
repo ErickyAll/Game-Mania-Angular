@@ -1,37 +1,32 @@
-
- .banner {
+.banner {
   background-image: url(/assets/images/Background-banner.PNG);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 200px;
-  grid-template-areas: Banner texto; 
-  /* height: 629px;
-  padding: 0 200px; */ 
- 
+  grid-template-areas: Banner texto;
 }
 
-.banner-info-box{
-   grid-area: texto; 
+.banner-info-box {
+  grid-area: texto;
   color: black;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-right: 400px
-
+  margin-right: 400px;
 }
 
 .banner .banner-info {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: center;
- /* width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 500px;
  height: 250px; */
 }
 
@@ -43,78 +38,74 @@
 }
 
 .subscribe {
-  
- 
+  grid-area: texto;
   background-color: #7045cd;
   height: 70px;
   width: 250px;
   border-radius: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-size: 30px;
   text-transform: uppercase;
   color: white;
-  
-  
+  box-shadow: 2px 5px 2px black;
 
+  transition: 0.3s;
 }
 
 .info-link {
   text-decoration: none;
   color: white;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
-.info-link:hover{
- color: #AAB0AE;
+.info-link:hover {
+  color: #aab0ae;
 }
 
-.subscribe:hover{
-
+.subscribe:hover {
   cursor: pointer;
   color: white;
-  background-color: #0b041b;
+  background-color: #1c0c42;
 
+  width: 260px;
+  height: 75px;
+
+  box-shadow: 2px 5px 3px black;
 }
 
 .patrocinio {
-
-  background-color: #310C7E;
+  background-color: #310c7e;
   padding-top: 10px;
   padding-bottom: 10px;
   /* height: 120px;
   display: flex;
   align-items: center;
   justify-content: center; */
-  
 }
 
 .patrocinio-flex {
- display: flex;
-   justify-content: space-between;
-   align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sony {
-
   width: 270px;
   height: 57px;
   padding-right: 70px;
-
 }
 
 .nintendo {
-
   width: 270px;
   height: 57px;
   padding-right: 70px;
-
 }
 
 .playstation {
-
   width: 270px;
   height: 57px;
   padding-right: 70px;
@@ -124,134 +115,114 @@
   width: 220px;
   height: 100px;
   padding-right: 70px;
-
 }
 
 .products-Bg {
-
-  
-  background-image: linear-gradient(to bottom, black,#310C7E );
+  background-image: linear-gradient(to bottom, black, #310c7e);
   padding: 30px 0;
- 
-
 }
 
 .card {
- margin: 35px 10px 0 0;
- border-radius: 30px ;
- height: 184px;
- overflow: hidden;
+  margin: 35px 10px 0 0;
+  border-radius: 30px;
+  height: 184px;
+  overflow: hidden;
 }
 
 .card-img {
- border-radius: 30px;
+  border-radius: 30px;
 }
 
 .card-title {
- font-size: 1.9rem;
- margin-top: 2rem;
- text-shadow: 0 10px 10px rgba(0, 0, 0, 0.619)
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.619);
 }
 
 .btn-price {
- 
- background-color: #310C7E;
- border-radius: 40px;
- font-weight: bold;
- border: none;
+  background-color: #310c7e;
+  border-radius: 40px;
+  font-weight: bold;
+  border: none;
 
- width: 80%;
- height: 20%;
+  width: 80%;
+  height: 20%;
 
- margin-top: 3.8rem;
- margin-left: 8%;
- display: flex;
- align-items: center;
- justify-content: center;
+  margin-top: 3.8rem;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
- letter-spacing: .2rem;
- box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.466);
+  letter-spacing: 0.2rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.466);
 }
 
 .btn-price:hover {
- background-color: #6b35df;
+  background-color: #6b35df;
 }
-
-
 
 /* Breackpoints */
 
 @media all and (max-width: 1920px) {
- .card-title {
-   font-size: 1.3rem;
-   margin-top: 2rem;
-   text-shadow: 0 10px 10px rgba(0, 0, 0, 0.619)
+  .info-title {
+    margin-top: -40px;
   }
-  
+
+  .card-title {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.619);
+  }
+
   .btn-price {
-   margin-top: 2.4rem;
-   margin-left: 9%;
+    margin-top: 2.4rem;
+    margin-left: 9%;
   }
 }
 
-
-@media all and (max-width: 991px){
- 
- .patrocinio {
-     display: none;
- }
+@media all and (max-width: 991px) {
+  .patrocinio {
+    display: none;
+  }
 }
-
 
 /* SMARTPHONES celulares 0 - 767px */
 @media all and (max-width: 767px) {
- 
-
- .banner {
-   justify-content: center;
-   align-items: center;
-   /* background-image: linear-gradient(to bottom, #8052e2, #310C7E); */
-   background-image: url(/assets/images/Soldado.png);
-   background-color: #170837;
-   background-position-x: 50%;
-   background-position-y: 40px;
-  
- }
-
- .banner-info-box{
-   margin-right: 400px;
- }
-
-
- .info-title {
-   font-size: 52px;
-   margin-bottom: 100px;
-   margin-top: -50px;
- }
-
-
-
- .banner-info {
-   margin-left: 200px;
-   margin-top: -100px;
-   color: aliceblue;
-   
- }
-
- 
- .card-title {
-   font-size: 1.4rem;
-   margin-top: 2rem;
-   
+  .banner {
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to bottom, #8052e2, #310C7E); */
+    background-image: url(/assets/images/Soldado.png);
+    background-color: #170837;
+    background-position-x: 50%;
+    background-position-y: 40px;
   }
-  
+
+  .banner-info-box {
+    margin-right: 400px;
+  }
+
+  .info-title {
+    font-size: 52px;
+    margin-bottom: 100px;
+    margin-top: -50px;
+  }
+
+  .banner-info {
+    margin-left: 200px;
+    margin-top: -100px;
+    color: aliceblue;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
   .btn-price {
-   
-   margin-top: 43px;
-   margin-left: 9%;
-   letter-spacing: .1rem;
-   
+    margin-top: 43px;
+    margin-left: 9%;
+    letter-spacing: 0.1rem;
   }
-
-
 }
