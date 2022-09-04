@@ -77,6 +77,15 @@
   box-shadow: 2px 5px 3px black;
 }
 
+.logoImgAnimation img {
+  height: 300px;
+  margin-top: -500px;
+  margin-right: -650px;
+
+  animation: rotationImg 4s infinite;
+  transition: 0.5s;
+}
+
 .patrocinio {
   background-color: #310c7e;
   padding-top: 10px;
@@ -162,6 +171,35 @@
   background-color: #6b35df;
 }
 
+@keyframes rotationImg {
+  0% {
+    transform: rotateY(0deg);
+    filter: opacity(100%);
+    margin-top: -750px;
+    height: 100px;
+    filter: blur(7px);
+  }
+
+  25% {
+    filter: opacity(80%);
+    margin-top: -500px;
+    height: 200px;
+    filter: blur(4px);
+  }
+
+  50% {
+    filter: opacity(50%);
+    margin-top: -200px;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    filter: opacity(100%);
+    margin-top: -550px;
+  }
+}
+
 /* Breackpoints */
 
 @media all and (max-width: 1920px) {
@@ -185,6 +223,10 @@
   .patrocinio {
     display: none;
   }
+
+  .logoImgAnimation {
+    display: none;
+  }
 }
 
 /* SMARTPHONES celulares 0 - 767px */
@@ -197,6 +239,10 @@
     background-color: #170837;
     background-position-x: 50%;
     background-position-y: 40px;
+  }
+
+  .logoImgAnimation {
+    display: none;
   }
 
   .banner-info-box {
