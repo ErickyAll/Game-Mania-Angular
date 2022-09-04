@@ -1,12 +1,18 @@
 $(document).ready(function () {
-  $('.menu-bars').click(function () {
-    $('.menu').toggleClass('mostraEscondeMenu')
-  })
+  $(".menu-bars").click(function () {
+    $(".menu").toggleClass("mostraEscondeMenu");
+  });
 
-  $('.btn-price').click(function () {
-    alert('Produto indisponivel :/')
-  })
-})
+  $(document).ready(function () {
+    $(".menu-text").click(function () {
+      $(".menu").toggleClass("mostraEscondeMenu");
+    });
+  });
+
+  $(".btn-price").click(function () {
+    alert("Produto indisponivel :/");
+  });
+});
 
 // function abreFechaMenu() {
 //   // navbar -tag nav
