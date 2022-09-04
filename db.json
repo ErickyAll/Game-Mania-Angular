@@ -41,6 +41,23 @@
       "password": "$2a$10$SYLlPr1rc6GP.YRP4sSVYu1rgdn9ypz6owRMj947W/Pti0cQodvDi",
       "usuario": "Erickyy",
       "id": 7
+    },
+    {
+      "usuario": "Erick",
+      "email": "erickiti@gmail.com",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "email": "erickiti@gmail.com",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "email": "lulota@gmail.com",
+      "password": "$2a$10$XnDlVM3309ug7WzpdNyUu.WtjomCWXvyj8t0I9ZPTAqRvQOmzGXX6",
+      "usuario": "lulota",
+      "id": 10
     }
   ]
 }

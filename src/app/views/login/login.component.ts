@@ -17,6 +17,31 @@ export class LoginComponent implements OnInit {
   message: string = '';
 
   validateLogin(): boolean {
+    const BLACKLIST = [
+      'SELECT',
+      'OR',
+      '--',
+      ';',
+      '1 = 1',
+      '1=1',
+      'DROP',
+      `\"\"=\"\"`,
+    ];
+
+    let validationBL = false;
+
+    BLACKLIST.forEach((word) => {
+      if (this.userModel.email?.toUpperCase().includes(word)) {
+        validationBL = true;
+      }
+    });
+
+    console.log('Blacklist on', validationBL);
+
+    if (validationBL) {
+      return false;
+    }
+
     if (
       this.userModel.email === undefined ||
       this.userModel.email === '' ||
@@ -48,7 +73,7 @@ export class LoginComponent implements OnInit {
         }
       );
     } else {
-      this.message = 'Preencha todos os campos';
+      this.message = 'Preencha todos os campos corretamente';
     }
   }
 }
