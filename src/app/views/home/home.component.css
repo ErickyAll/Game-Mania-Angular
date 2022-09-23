@@ -193,9 +193,18 @@
     filter: blur(1px);
   }
 
-  100% {
+  80% {
     transform: rotateY(360deg);
     filter: opacity(100%);
+    margin-top: -550px;
+  }
+
+  90% {
+    filter: opacity(50%);
+    margin-top: -550px;
+  }
+  100% {
+    filter: opacity(0%);
     margin-top: -550px;
   }
 }

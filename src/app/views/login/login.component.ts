@@ -54,9 +54,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  // Comando para rodar json server
-  // json-server db.json -m ./node_modules/json-server-auth
-
   //Função de Login
   signin() {
     if (this.validateLogin()) {

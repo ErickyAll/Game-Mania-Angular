@@ -3,6 +3,9 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user';
 
+// Comando para rodar json server
+// json-server db.json -m ./node_modules/json-server-auth
+
 @Injectable({
   providedIn: 'root',
 })
